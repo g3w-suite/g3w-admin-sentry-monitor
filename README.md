@@ -164,7 +164,7 @@ from django.conf import settings
 
 INSTALLED_APPS = ['sentry_monitor'] + settings.INSTALLED_APPS
 
-# A temporary workaround could be usisng the THIRD_PARTY_APPS variable:
+# A temporary workaround could be using the THIRD_PARTY_APPS variable:
 
 THIRD_PARTY_APPS = ['sentry_monitor'] + settings.THIRD_PARTY_APPS
 ```
