@@ -65,7 +65,41 @@ SENTRY_JS_DSN = "https://your-javascript-dsn@sentry.example.com/1"
 SENTRY_PY_DSN = "https://your-python-dsn@sentry.example.com/2"
 ```
 
-For the default settings currently applied by this module, see also: [`sentry_monitor/__init__.py`](sentry_monitor/__init__.py) 
+```html
+<!--
+  Include javascript tracking script within all html pages you want to monitor
+
+  see: https://docs.djangoproject.com/en/2.2/topics/templates/#the-django-template-language
+-->
+<html>
+<body>
+   ...
+  {% if SETTINGS.SENTRY_JS %}
+    {{ SETTINGS.SENTRY_JS | safe }}
+  {% endif %}
+  ...
+</html>
+```
+
+For the default settings currently applied by this module, see also: [`sentry_monitor/__init__.py`](sentry_monitor/__init__.py)
+
+## Check tracker integration
+
+Intentionally trigger a javascript error within a django page (html template) and then login into your [sentry.io](https://sentry.io/) account for viewing the trace log
+
+```html
+<html>
+<body>
+   ...
+  {% if SETTINGS.SENTRY_JS %}
+    {{ SETTINGS.SENTRY_JS | safe }}
+  {% endif %}
+  ...
+  <script>
+    myUndefinedFunction(); // Intentionally trigger a javascript error
+  </script>
+</html>
+```
 
 ## Contributing
 
