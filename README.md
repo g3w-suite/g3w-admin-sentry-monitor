@@ -81,7 +81,7 @@ SENTRY_PY_DSN = "https://your-python-dsn@sentry.example.com/2"
 </html>
 ```
 
-For the default settings currently applied by this module, see also: [`sentry_monitor/__init__.py`](sentry_monitor/__init__.py)
+For the default settings currently applied by this module, see also: [`sentry_monitor/apps.py`](sentry_monitor/apps.py)
 
 ## Check tracker integration
 
@@ -220,8 +220,8 @@ Sentry integrations:
 ---
 
 **Compatibile with:**
-[![g3w-admin version](https://img.shields.io/badge/g3w--admin-3.5-1EB300.svg?style=flat)](https://github.com/g3w-suite/g3w-admin/tree/v.3.5.x)
-[![g3w-suite-docker version](https://img.shields.io/badge/g3w--suite--docker-3.5-1EB300.svg?style=flat)](https://github.com/g3w-suite/g3w-suite-docker/tree/v3.5.x)
+[![g3w-admin version](https://img.shields.io/badge/g3w--admin-3.6-1EB300.svg?style=flat)](https://github.com/g3w-suite/g3w-admin/tree/v.3.6.x)
+[![g3w-suite-docker version](https://img.shields.io/badge/g3w--suite--docker-3.6-1EB300.svg?style=flat)](https://github.com/g3w-suite/g3w-suite-docker/tree/v3.6.x)
 
 ---
 
