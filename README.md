@@ -1,4 +1,4 @@
-# G3W-ADMIN-SENTRY-MONITOR
+# G3W-ADMIN-SENTRY-MONITOR v0.0.1
 
 G3W-SUITE module for application performance monitoring and error tracking via [sentry.io](https://sentry.io/).
 
