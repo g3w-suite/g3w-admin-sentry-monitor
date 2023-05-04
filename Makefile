@@ -1,3 +1,5 @@
+PROJECT_NAME = G3W-ADMIN-SENTRY-MONITOR
+
 INCLUDE_MAKEFILES_RELEASE = v0.2.0
 INCLUDE_MAKEFILES =         Makefile.semver.mk Makefile.venv.mk
 
